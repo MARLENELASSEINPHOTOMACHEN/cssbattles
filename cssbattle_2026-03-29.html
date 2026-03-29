@@ -1,27 +1,32 @@
 <img>
+<div>
 <img>
 <img>
 <img>
 <img>
+</div>
 <style>
-  * {
+  body {
     background: #6319FF;
-  }
+    padding:
+      62 112;
   img {
-    position: fixed;
     border: #FB8C79 solid 80px;
-    margin: 62 112;
-    + img {
-    margin: 22 72;
-    border:solid #fff 50px;
-    + img {
-    margin: 162 72;
-    + img {
-    margin: 22 212;
-    + img {
-    margin: 162 212;
-      border-color: #6319FF;
-      
+    }
+  > * {
+   position: fixed; 
+  }
+    div {
+    display: flex;
+      margin: -40;
+      flex-wrap: wrap;
+      gap: 40px;
+      * {
+        border: #fff solid 50px;
+      }
+      *:last-child {
+          border-color: #6319FF;
+        }
     }
   }
 </style>
